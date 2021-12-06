@@ -8,7 +8,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-       //comment 
+       //comment
         
         let photos = PHPhotoLibrary.authorizationStatus()
         if photos == .notDetermined {
@@ -24,6 +24,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         } else if photos == .authorized {
             gotoVC()
         }
+        
+        
+        
+        
         
         return true
     }
